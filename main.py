@@ -3,7 +3,7 @@ from PIL import Image
 from pygifsicle import optimize
 
 # Check image size is power of 2
-filename = "arrow"
+filename = "landscape"
 im = Image.open(filename + ".png")
 im = im.convert("RGBA")
 if not (im.size[0] == im.size[1] and (im.size[0] and (not(im.size[0] & (im.size[0] - 1))))):
